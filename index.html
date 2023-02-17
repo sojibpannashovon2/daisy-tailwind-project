@@ -10,10 +10,161 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header></header>
+<body class="text-yellow-400">
+    <header class="drop-shadow-4xl lg:px-15 ">
+        <div class="navbar bg-base-100 lg:px-24 bg-sky-00">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-4xl font-bold">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-xl">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li tabindex="0">
+                        <a>
+                            Chatagory
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-2">
+                            <li><a>Details-1</a></li>
+                            <li><a>Details-2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>About Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Get started</a>
+            </div>
+        </div>
+    </header>
     <main>
-
+        <section class="mt-5 mb-5 lg:mx-5 flex flex-col md:flex-row lg:flex-row">
+            <div id="product-details" class=" grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                <div class="card w-80 h-fit bg-base-100 shadow-xl border border-sky-blue">
+                    <figure><img class="w-full h-30" src="./img/coffee.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="product-name" class="card-title">coffee Js</h2>
+                        <p class="h-full">Coffee is a drink prepared from roasted coffee beans.</p>
+                        <h4>Price: $<span id="product-price">110</span></h4>
+                        <h4>Quantity: <span id="product-quantity">10</span></h4>
+                        <div class="card-actions justify-end">
+                            <button id="first-product" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 h-fit bg-base-100 shadow-xl border border-sky-blue">
+                    <figure><img class="w-full h-44" src="./img/heart_js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Heart Js</h2>
+                        <p>Coffee is a drink prepared from roasted coffee beans.
+                        </p>
+                        <h4>Price: $<span>210</span></h4>
+                        <h4>Quantity: <span>15</span></h4>
+                        <div class="card-actions justify-end">
+                            <button id="second-product" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 h-fit bg-base-100 shadow-xl border border-sky-blue">
+                    <figure><img class="w-full h-44" src="./img/panda.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Panda Js</h2>
+                        <p>Coffee is a drink prepared from roasted coffee beans.
+                        </p>
+                        <h4>Price: $<span>110</span></h4>
+                        <h4>Quantity: <span>10</span></h4>
+                        <div class="card-actions justify-end">
+                            <button id="third-product" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 h-fit bg-base-100 shadow-xl border border-sky-blue">
+                    <figure><img class="w-full h-44" src="./img/umbrella.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Umbrella Js</h2>
+                        <p>Coffee is a drink prepared from roasted coffee beans.
+                        </p>
+                        <h4>Price: $<span>310</span></h4>
+                        <h4>Quantity: <span>11</span></h4>
+                        <div class="card-actions justify-end">
+                            <button id="fourth-product" class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 h-fit bg-base-100 shadow-xl border border-sky-blue">
+                    <figure><img class="w-full h-44" src="./img/vue-js.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Vue Js</h2>
+                        <p>Coffee is a drink prepared from roasted coffee beans.
+                        </p>
+                        <!-- <h4>Price: $<span>410</span></h4>
+                        <h4>Quantity: <span>21</span></h4> -->
+                        <input type="text" placeholder="Price Please"
+                            class="input input-bordered input-warning w-full max-w-xs" />
+                        <input type="text" placeholder="Quantity Please"
+                            class="input input-bordered input-warning w-full max-w-xs" />
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="card-details" class="w-full md:w-[28%]  lg:w-[28%] mx-auto mt-3 ">
+                <h1 class="font-bold text-4xl text-center">Total Products: <Span id="total-products-quantity">0</Span>
+                </h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quality</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="item-details">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="js/daisy.js"></script>
 </body>
